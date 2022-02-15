@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <!-- Style File -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__left">
+                    <div class="logorype">
+                        <a href="index.html"><img src="img/logo.svg" alt="logotype"></a>
+                        <img src="img/search.svg" alt="search">
+                    </div>
+                </div>
+                <div class="header__right">
+                    <a onclick="myFunction()" class="margin33" href="#"><img src="img/burger.svg" alt="burger"></a>
+                    <a class="margin33" href="registration.html"><img src="img/users.svg" alt="users"></a>
+                    <a href="shopping.html"><img src="img/basket.svg" alt="basket"></a>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div id="myDropdown" class="dropdown-content">
+                <a onclick="myFunction()" class="dropdown-cross" href="#"><i class="fas fa-times cross-rotate"></i></a>
+                <p class="menu__title">MENU</p>
+
+                <p class="category__name">MAN</p>
+                <a class="category__item" href="#">Accessories</a>
+                <a class="category__item" href="#">Bags</a>
+                <a class="category__item" href="#">Denim</a>
+                <a class="category__item" href="#">T-Shirts</a>
+                
+                <p class="category__name">WOMAN</p>
+                <a class="category__item" href="#">Accessories</a>
+                <a class="category__item" href="#">Jackets & Coats</a>
+                <a class="category__item" href="#">Polos</a>
+                <a class="category__item" href="#">T-Shirts</a>
+                <a class="category__item" href="#">Shirts</a>
+
+                <p class="category__name">KIDS</p>
+                <a class="category__item" href="#">Accessories</a>
+                <a class="category__item" href="#">Jackets & Coats</a>
+                <a class="category__item" href="#">Polos</a>
+                <a class="category__item" href="#">T-Shirts</a>
+                <a class="category__item" href="#">Shirts</a>
+                <a class="category__item" href="#">Bags</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main__catalog">
+        <div class="container">
+            <div class="main__catalog-wrapper">
+                <h1 class="catalog__title">SHOPPING CART</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="registration">
+        <div class="container">
+            <div class="registration__warapper">
+                <div class="registration__left">
+
+                    <div class="items">
+                        <div class="img__block"><a href="product.html"><img class="items-img" src="img/card3.png" alt="photo"></a></div>
+                        <div class="items-info">
+                            <a href="product.html" class="items-txt">MANGO PEOPLE T-SHIRT</a>
+                            <div class="items-dsc">
+                                <p class="items-dsc-txt">Price: <span id="price" class="items-dsc-color">$300</span></p>
+                                <p class="items-dsc-txt">Color: Red</p>
+                                <p class="items-dsc-txt">Size: Xl</p>
+                                <p class="items-dsc-txt">Quantity: <input onclick="calc()" id="qual" class="quantity" type="number" name="num" min="1" max="9" value="1"></p>	
+                            </div>
+                        </div>
+                        <a class="cross" href="#"><i class="fas fa-times cross-rotate"></i></a>
+                    </div>
+
+                    <div class="items">
+                        <div class="img__block"><a href="product.html"><img class="items-img" src="img/card10.png" alt="photo"></a></div>
+                        <div class="items-info">
+                            <a href="product.html" class="items-txt">MANGO PEOPLE T-SHIRT</a>
+                            <div class="items-dsc">
+                                <p class="items-dsc-txt">Price: <span id="price_2" class="items-dsc-color">$300</span></p>
+                                <p class="items-dsc-txt">Color: Red</p>
+                                <p class="items-dsc-txt">Size: Xl</p>
+                                <p class="items-dsc-txt">Quantity: <input onclick="calc()" id="qual_2" class="quantity" type="number" name="num" min="1" max="9" value="1"></p>	
+                            </div>
+                        </div>
+                        <a class="cross" href="#"><i class="fas fa-times cross-rotate"></i></a>
+                    </div>
+
+                    <div class="items__actions">
+                        <a href="#">CLEAR SHOPPING CART</a>
+                        <a href="#">CONTINUE SHOPPING</a>
+                    </div>
+                </div>
+                <div class="registration__right">
+                    <div class="users__info">
+                        <p class="users__info-txt">SHIPPING ADRESS</p>
+                        <form class="users__adress" action="#">
+                            <input type="text" placeholder="Bangladesh">
+                            <input type="text" placeholder="State">
+                            <input type="text" placeholder="Postcode / Zip">
+                            <a class="get_a_quote" href="#">GET A QUOTE</a>
+                            <div class="price__info">
+                                <div class="price__info-txt">
+                                    <p class="sub__total">SUB TOTAL <span class="span__price">$900</span></p>
+                                    <p class="grand__total">GRAND TOTAL <span id="price_total" class="span__price boold-color">$900</span></p>
+                                </div>
+                                <hr>
+                                <div class="price__proceed">
+                                    <a href="#">PROCEED TO CHECKOUT</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__top">
+        <div class="footer__top-blur">
+            <div class="container">
+                <div class="footer__top-wrapper">
+                    <div class="footer__top-left">
+                        <img class="footer__user-img" src="img/Intersect.png" alt="photo">
+                        <p class="review">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                    </div>
+                    <div class="footer__top-right">
+                        <h1 class="footer__top-title">SUBSCRIBE</h1>
+                        <p class="footer__top-desc">FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form class="form__email" action="#">
+                            <input class="input__email" type="email" placeholder="Enter Your Email">
+                            <button class="send__btn" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="copyright">
+                    <p class="copyright__desc">© 2021 Brand All Rights Reserved.</p>
+                </div>
+                <div class="social">
+                    <a href="#">
+                        <div class="social__item">
+                            <i class="fab fa-facebook-f social__list"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="social__item">
+                            <i class="fab fa-instagram social__list"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="social__item">
+                            <i class="fab fa-pinterest-p social__list"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="social__item">
+                            <i class="fab fa-twitter social__list"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function calc(){
+        var a=document.getElementById('qual').value;
+        var b=document.getElementById('qual_2').value;
+        var result = a * 300;
+        var result_2 = b * 300;
+        document.getElementById('price').innerHTML = ("$" + result);
+        document.getElementById('price_2').innerHTML = ("$" + result_2);
+        var total = result + result_2
+        document.getElementById('price_total').innerHTML = ("$" + total);
+    }
+
+</script>
+
+</body>
+</html>
