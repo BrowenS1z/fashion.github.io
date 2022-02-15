@@ -1,0 +1,265 @@
+@media (max-width: 768px){
+    .header{
+        width: 768px;
+    }
+
+    .container{
+        width: 768px;
+    }
+
+    .header__left{
+        padding-left: 32px;
+    }
+
+    .header__right{
+        padding-right: 32px;
+    }
+
+    .main{
+        width: 768px;
+        height: 367px;
+    }
+
+    .main__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .photo__man{
+        width: 386px;
+        margin-left: -80px;
+    }
+    
+    .title{
+        width: 283px;   
+    }
+    .main__title{
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .boold{
+        font-size: 44px;
+        line-height: 52px;
+    }
+
+    /* goods */
+
+    .goods__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .for__womew{
+        width: 232px;
+        height: 167px;
+        background-image: url(../img/women.png);
+        background-size: contain;
+        transition: 0.6s;
+    }
+
+    .for__men{
+        width: 232px;
+        height: 167px;
+        background-image: url(../img/man.png);
+        background-size: contain;
+        transition: 0.6s;
+    }
+
+    .for__kids{
+        width: 232px;
+        height: 167px;
+        background-image: url(../img/kids.png);
+        background-size: contain;
+        transition: 0.6s;
+    }
+
+    .accesories{
+        width: 735px;
+        height: 116px;
+        background-image: url(../img/accesories.png);
+        background-size: contain;
+        transition: 0.6s;
+    }
+
+    .blur{
+        width: 232px;
+        height: 167px;
+    }
+
+    .accesories__blur{
+        width: 735px;
+        height: 116px;
+    }
+
+    .goods__title{
+        padding-top: 59px;
+    }
+
+    .pd33{
+        padding-top: 33px;
+    }
+
+    .products {
+        margin-top: 72px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .card{
+        margin-bottom: 17px;
+    }
+
+    /* advantages */
+
+    .advantages{
+        height: 610px;
+        margin-top: 65px;
+    }
+
+    .advantages__wrapper {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .advantages__card{
+        margin-top: 48px;
+    }
+
+    .footer__top-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__top-title{
+        margin-top: 48px;
+    }
+
+    .footer{
+        width: 768px;
+    }
+
+    .footer__wrapper {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+@media (max-width: 378px){
+    .container{
+        width: 375px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        width: 375px;
+    }
+
+    .users{
+        display: none;
+    }
+
+    .asket{
+        display: none;
+    }
+
+    .header__right {
+        padding-right: 0px;
+    }
+
+    .header__left {
+        padding-left: 0px;
+    }
+
+    .main{
+        width: 375px;
+        height: 363px;
+    }
+
+    .margin33{
+        margin-right: 0;
+    }
+
+    .main__left{
+        display: none;
+    }
+
+    .pink__line{
+        height: 68px;
+    }
+
+    .main__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .main__right{
+        margin-left: 40px;
+        margin-top: 148px;
+    }
+
+    .boold{
+        font-size: 38px;
+        line-height: 45px;
+    }
+
+    .goods__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .for__men{
+        margin-top: 32px;
+    }
+
+    .for__kids{
+        margin-top: 32px;
+    }
+
+    .accesories__blur {
+        width: 343px;
+        height: 116px;
+    }
+
+    .last-card{
+        margin-bottom: 80px;
+    }
+
+    .products {
+        margin-top: 64px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__top-desc{
+        width: 350px;
+    }
+
+    .footer {
+        width: 375px;
+        height: 143px;
+    }
+
+    .footer__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .copyright{
+        padding-top: 43px;
+        margin-bottom: 40px;
+    }
+
+    .social{
+        margin-bottom: 9px;
+    }
+}
